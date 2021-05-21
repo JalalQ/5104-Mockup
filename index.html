@@ -1,0 +1,192 @@
+<!-- Coding challenge - Completed by Jalaluddin Qureshi 10/25/2020(Humber College).-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HomeGreenery</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="page-wrapper">
+        
+        
+            <!-- SLOGAN -->
+            <div id="slogan">
+                <h2 class="hidden">Company Logo</h2>
+                <div><span id="slogan-home">Home</span><span id="slogan-greenery">Greenery</span></div>
+            </div>
+            
+            <!-- MAIN NAVIGATION with SIGN IN BUTTON-->
+            <nav id="main-navigation">
+                <h3 class="hidden">Main navigation</h3>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#">Tips</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button onclick="location.href='#'" type="button">Sign In</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+      
+    <!-- BANNER -->
+    <section id="banner">
+        <h1 class="hidden">Welcome Background Image</h1>
+        <div class="banner-content">
+            <div class="page-wrapper">
+                <h2 class="banner-title">Find your Green Thumb</h2>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="images/ostrich-fern-crop.jpg" alt="Ostrich Fern Leaves">
+        </div>
+    </section>
+      
+    <!-- MAIN CONTENT -->
+    <div class="page-wrapper">
+      
+      <main id="main">
+        <h1 class="hidden">Welcome to Home Greenery</h1>
+      
+            <!-- TWO COLUMN LAYOUT -->
+            <div class="row"><!-- using a class for defining rows to prevent floating issues -->
+                <section class="col-50"> <!-- Why Grow Plants at Home -->
+                    <h2 class="column-title">Why Grow Plants at Home?</h2>
+                    <p><img id="column-img" src="images/potted-plant.jpg" alt="Indoor Plant"></p>
+                    <ul class="list">
+                        <li>Spruce up your indoor space while cleaning the air at the same time.</li>
+                        <li>Boost your mood and creativity.</li>
+                        <li>Grow your own food and eat fresher.</li>
+                    </ul>
+                </section>
+                <section class="col-50"> <!-- New To Gardening -->
+                    <h2 class="column-title">New To Gardening?</h2>
+                    <p>No problem. Take advantage of our <a href="#">plant growing resources.</a></p>
+                    <p><a href="#">Create an account </a>to get access to your gardener's journal and garden-planning tools. Get customized charts.</p>
+                    <p><button onclick="location.href='#'" type="button">Register now</button></p>
+                </section>
+            </div>
+          
+            <!-- THREE COLUMN LAYOUT -->
+            <div class="row">
+
+                  <div class="img-links">
+
+                      <h2 class="img-links-heading">Find What You're Looking For</h2>
+
+                      <section class="col-33">
+                          <h3><a href="#">Seeds</a></h3>
+                          <p class="three-imgs"><img src="images/seedlings.jpg" alt="Sowing Seeds"></p>
+                          <p class="three-imgs">Where to get seeds and how to store them.</p>
+                          <p class="button-three"><button onclick="location.href='#'" type="button">Learn about seeds</button></p>
+                      </section>
+
+                      <section class="col-33">
+                          <h3><a href="#">Plant Resource</a></h3>
+                          <p class="three-imgs"><img src="images/journal-book.jpg" alt="Looking for Information"></p>
+                          <p class="three-imgs">Look up a plant and growing info.</p>
+                          <p class="button-three"><button onclick="location.href='#'" type="button">Plant index</button></p>
+                      </section>
+
+                      <section class="col-33">
+                          <h3><a href="#">Growing Food</a></h3>
+                          <p class="three-imgs"><img src="images/veg-garden.jpg" alt="Home Farming"></p>
+                          <p class="three-imgs">Learn about growing your own food.</p>
+                          <p class="button-three"><button onclick="location.href='#'" type="button">Food gardening</button></p>
+                      </section>
+
+                    </div>
+            </div>
+          
+            <!-- FORM -->
+            <div class="row">
+                <div class="sub-form">
+                    <h1 class="hidden">Subscription Form</h2>
+                    <h2 class="img-links-heading">Stay Up to date</h2>
+                    <p class="three-imgs">Get the latest gardening articles and tips by subscribing to our newsletters.</p>
+                    <form action="#" method="post">
+
+                        <div id="email-div">
+                            <label for="email">Email </label>
+                            <input type="email" id="email" name="user_email" placeholder="john.smith@example.com" value="">
+                        </div>
+
+                        <fieldset>
+                            <legend>Your interests</legend>
+                            <input type="checkbox" id="tips" name="interest1" value="tips" />
+                            <label for="tips">Tips</label>
+
+                            <input type="checkbox" id="news" name="interest2" value="news" />
+                            <label for="news">News</label>
+
+                            <input type="checkbox" id="tools" name="interest3" value="tools" />
+                            <label for="tools">Tools</label>  
+                        </fieldset>
+
+                        <p id="subscribe"><button onclick="location.href='#'" type="button">Subscribe Now</button></p>
+                    </form>
+
+                </div>
+            </div>
+          
+          
+                <!-- FOOTER -->
+                <footer id="footer">
+                    <nav id="footer-navigation">
+                        <div class="page-wrapper">
+                            <h2 class="hidden">Footer navigation</h2>
+
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">PLANTS</a>
+                                    <ul>
+                                        <li><a href="#">Plant Index</a></li>
+                                        <li><a href="#">Featured Plants</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">RESOURCES</a>
+                                    <ul>
+                                        <li><a href="#">Zone maps</a></li>
+                                        <li><a href="#">Planting charts</a></li>
+                                        <li><a href="#">Garden structures</a></li>
+                                        <li><a href="#">Suppliers</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">LEGAL</a>
+                                    <ul>
+                                        <li><a href="#">Terms and conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                    </div>
+              </nav>
+       
+              <!--The COPYRIGHT BAR-->    
+              <div id="copyright-bar">
+                <div class="page-wrapper">
+                  <div class="copyright">
+                    &copy; Copyright HomeGreenery, 2020. All rights reserved. This is a fake website for HTTP5104.
+                  </div>
+                </div>
+              </div>
+            </footer>
+          
+        </main>
+    </div>
+
+  </body>
+</html>

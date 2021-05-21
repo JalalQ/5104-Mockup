@@ -1,0 +1,435 @@
+/* Imports Lato Black 900 AND Open Sans Light 300 from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:wght@300&display=swap');
+
+/************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES/SETUP
+ * 1a. Common classes
+ * 2. HEADER
+ * 3. BANNER with BACKGROUND IMAGE
+ * 4. MAIN CONTENT
+ * 4a. TWO COLUMNS 
+ * 4b. THREE COLUMNS
+ * 4c. SUBSCRIPTION FORM
+ * 5. FOOTER
+ */
+/************************************************************
+
+/* 1. GENERAL STYLES/SETUP */
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+/* -- 1a. Common classes */
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+/* 2. HEADER */
+#header {
+    background-color:#202228;
+}
+
+#header .page-wrapper {
+    padding: 2.875em 0em;
+}
+
+#slogan {
+    display:inline-block;
+    font-family:'Lato', sans-serif;
+    font-size:1.75em;
+    text-transform:uppercase;
+}
+
+/* Slogan in the header first half part */
+#slogan-home {
+    color:#ffffff;
+}
+
+/* Slogan in the header second half part */
+#slogan-greenery {
+    color:#19c17e;
+}
+
+#main-navigation {
+    position:absolute;
+    right:0;
+    top:2em;
+}
+
+#main-navigation .menu {
+  margin:0;
+  padding:0;
+}
+
+#main-navigation li {
+  display:inline-block;
+  list-style-type:none;
+  padding-left:2.125em;
+  font-size:1.3125em;
+}
+
+#main-navigation button {
+    padding:0.5em 0.7em;
+    background-color:#19c17e;
+    border:0;
+    border-radius:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.1em;
+}
+
+#main-navigation button:hover {
+    color:white;   
+}
+
+#main-navigation a {
+    color:#fff;
+    text-decoration:none;
+}
+
+#main-navigation a:hover {
+    color:#19c17e;
+}
+
+/* 3. BANNER with BACKGROUND IMAGE*/
+#banner {
+    position:relative;
+    color:#fff;
+    margin-bottom:2.3em;
+}
+
+.banner-content {
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+.banner-content .page-wrapper {
+  padding:2.3em 1.3em; 
+}
+
+.banner-title {
+    margin:0;
+    font-family:'Lato', sans-serif;
+    font-size:6em;
+    text-shadow: 0 3px 3px #466933;
+    text-transform:uppercase;
+    white-space:pre-line; 
+}
+.banner-img img {
+  display:block;
+  margin:0 auto;
+  max-width:100%; 
+  height:auto;
+}
+
+
+/* 4. MAIN CONTENT */
+
+/* 4a. TWO COLUMNS */
+
+.row {
+  clear:both; /* make sure nothing ever floats next to .row */
+}
+
+.col-50 {
+  width:47%; /* 6% gutter for 2 columns leaves 94%/3 = 47% */
+  float:left;
+  margin-right:6%;
+  margin-bottom:1em;
+}
+
+.col-50:last-child {
+  margin-right:0; /* remove 2% margin for the last container in a row */
+}
+
+.column-title {
+    display:block;
+    color:#397153;   
+    font-family:'Lato', sans-serif;
+    font-size:1.5em;
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.list {
+    padding:1.25em 0 0 0;
+    list-style-type:square;
+}
+
+#column-img {
+    float: left;
+    margin-right: 40px;
+    margin-left: 16px;
+    width:140px;
+    height:200px;
+}
+
+.col-50 a {
+  color:#397153;
+  text-decoration:underline;
+}
+
+.col-50 a:hover {
+    color:#01a765;
+    text-decoration:none;
+}
+
+.col-50 button {
+    padding:0.6em 0.7em 0.5em 0.7em;
+    background-color:#202228;
+    color: white;
+    border:0;
+    border-radius:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1em;
+    margin-top:16px;
+    margin-left:220px;
+}
+
+.col-50 button:hover {
+    background-color:#19c17e;
+}
+
+/* 4b. THREE COLUMNS */
+
+.img-links {
+    background-color: #defef1;
+    
+}
+
+.img-links-heading {
+    margin:0;
+    padding-top:40px;
+    padding-bottom:10px;
+    text-align: center;
+    display:block;
+    color:#202228;   
+    font-family:'Lato', sans-serif;
+    font-size:1.5em;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.img-links a {
+  color:#397153;
+  text-decoration:none;
+}
+
+.img-links a:hover {
+  color:#01a765;
+  text-decoration:none;
+}
+
+.col-33 {
+  width:33%; /* 6% gutter for 2 columns leaves 94%/3 = 47% */
+  float:left;
+     background-color: #defef1;
+    padding-bottom:4.5em;
+}
+
+.col-33:last-child {
+width:34%;
+  padding-right:0; /* remove 2% margin for the last container in a row */
+}
+
+.col-33 button {
+    padding:0.6em 0.7em 0.5em 0.7em;
+    background-color:#202228;
+    color: white;
+    border:0;
+    border-radius:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1em;
+    margin-top:16px;
+    margin-left:auto;
+    
+}
+
+.col-33 button:hover {
+    background-color:#19c17e;
+}
+
+.button-three {
+    text-align: center;
+}
+
+.img-links h3 {
+    display:block;
+    color:#397153;   
+    font-family:'Lato', sans-serif;
+    font-size:1.3125em;
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.three-imgs {
+    text-align: center;
+}
+
+/* 4c. SUBSCRIPTION FORM*/
+
+.sub-form {
+    background-color:#19c17e;
+}
+
+#email-div {
+    text-align: center;
+}
+
+
+#email {
+    font-family:'Open Sans', sans-serif;
+    font-size:1.125em;
+    padding:0.25em 0.5em;
+    width:19.5em;
+    border-color: #dbd8da;
+    border-width: 1px;
+    margin-left:0.375em;
+}
+
+fieldset {
+    width:50%;   
+    margin-left:250px;
+    margin-top:1em;
+    border-color: #defef1;
+    border-width: 2px;
+}
+
+form {
+    margin:0 100px;
+    font-size:1.125em;
+    
+    
+}
+
+#tips {
+    margin-left: 70px;
+}
+
+#news {
+    margin-left: 70px;
+}
+
+#tools {
+    margin-left: 70px;
+}
+
+
+.sub-form button {
+    padding:0.6em 0.7em 0.5em 0.7em;
+    background-color:#202228;
+    color: white;
+    border:0;
+    border-radius:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.75em;
+    margin:1.5em 0 4em 0;
+    text-transform:uppercase;
+    
+}
+
+#subscribe {
+    text-align: center;
+    margin:0;
+}
+
+.sub-form button:hover {
+ color:#19c17e;   
+}
+
+
+/* 5. FOOTER */
+#footer {
+    clear:both;
+}
+
+#footer-navigation {
+    background-color:#202228;
+    padding:2.8em 0 2.8em 0;
+    font-size:0.875em;
+}
+
+#copyright-bar {
+    background-color:#202228;
+    font-size:0.875em;
+    color:#fff;
+}
+
+.copyright {
+    padding:10px 22px;
+    border-top-style: solid;
+    border-color: #19c17e;
+    border-width: 1px;
+}
+
+#footer-navigation ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#footer-navigation .menu {
+    margin:0 3.5%;
+    font-weight:normal; 
+}
+
+#footer-navigation li {
+    display:inline-block;
+    vertical-align:top;
+    width:24%;
+    margin-right:1%;
+    text-transform:uppercase;
+}
+
+#footer-navigation li:last-child {
+    margin-right:0;
+}
+
+#footer-navigation li a {
+    color:#fff;
+    text-decoration:none;
+}
+
+#footer-navigation li a:hover {
+    color:#19c17e;
+}
+
+#footer-navigation li ul {
+    margin-top:1.67em; /* 30px / 18px */
+}
+
+#footer-navigation li li {
+    float:none; 
+    display:block;
+    width:100%;
+    margin:0;
+    text-transform:capitalize;
+}
+
+#footer-navigation li li a {
+    color:#fff;
+}
